@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var_let_const</title>
+</head>
+<body>
+    <!--Variable,Let,Constant-->
+    <script>
+        var fname = "Swayambhu";
+        var fname = "Rahul";      //redeclare allowed
+        fname = "Ram";           //reassign allowed
+        document.write(fname);
+
+        let lname = "shantanu";
+        // let lname = "siddesh";    //redeclare not allowed
+        lname = "Sangram";          //reassign allowed
+        document.write(lname);
+
+        const pi = 3.14;
+        //const pi = 4.17;    //redeclare not allowed
+        // pi = 45.89;        //reassign not allowed
+        document.write(pi);
+        
+    </script>
+</body>
+</html>
