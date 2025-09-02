@@ -6,6 +6,8 @@
     <title>var_let_const</title>
 </head>
 <body>
+
+
     <!--Variable,Let,Constant-->
     <script>
         var fname = "Swayambhu";
@@ -22,7 +24,48 @@
         //const pi = 4.17;    //redeclare not allowed
         // pi = 45.89;        //reassign not allowed
         document.write(pi);
-        
+        document.write("<br>");
+        document.write("<br>");
+     </script>
+
+
+
+    <!--global,function,block scope-->
+    <script>
+        // global scope
+     var x = 101; 
+     let y = 102;
+     const z = 103;
+     document.write("<br>");
+         
+         //function scope
+     function scopeExample(){
+        var x = 1;              //function scope
+        let y = 2;              //block scope
+        const z = 3;            // block scope
+        if(true)                //inside this block
+        {               
+            var x = 10;         //reassign x(function scoped)
+            let y = 20;         // y only for this block
+            const z = 30;       //z only for this block
+
+            document.write(x);   //10
+            document.write(y);   //20
+            document.write(z);   //30
+            document.write("<br>");  //10 20 30
+        }
+          //outside the block but inside the function
+            document.write(x);  //10
+            document.write(y);  //2
+            document.write(z);  //3
+            document.write("<br>");  //10 2 3
+     }
+          //call function
+         scopeExample();
+            document.write(x);   //101
+            document.write(y);   //102
+            document.write(z);   //103
+            document.write("<br>");  //101 102 103
     </script>
 </body>
 </html>

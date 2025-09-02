@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <!--Arithmetic operator:- +,-,*,/,%,++,--,** -->
+    <script>
+        var a = 10;
+        var b = 3;
+        var c = a + b;  //13
+        c++;  //14
+        c--;  //13
+        c++;  //14
+        c++;  //15
+        c--;  //14
+
+        document.write(c);
+        document.write("<br>");
+    </script>
+
+    <script>
+        var a = 10;
+        var b = 3;
+        var c = a ** b;   //raise a power of b (10power(3))  //1000
+        c++;  //1001
+        c--;  //1000
+        c++;  //1001
+        c++;  //1002
+        c--;  //1001
+
+        document.write(c);
+        document.write("<br>");
+    </script>
+
+    <script>
+        var a = 10;
+        var b = 3;
+        var c = a % b;   //1
+
+        document.write(c);
+        document.write("<br>");
+    </script>
+
+    <!--Assignment operator:- =,+=,-=,*=,**=,%= -->
+    <script>
+         var x = 10;
+         var y = 3;
+         x+=y;                //x=x+y 10+3=13
+         document.write(x);
+          document.write("<br>");
+          document.write(y);     //y=3
+          document.write("<br>");
+         
+    </script>
+
+    <!--Comparison operator:- ==,===,</>, <==,>==,!= -->
+    <script>
+        var p = 13;
+         var q = "13";          //"string"
+         if(p==q){                     //==checks only value if equal then true
+            document.write("true");
+            document.write("<br>");
+         }else{
+             document.write("false");
+         }
+         if(p===q){                      //===checks both data type and value if equal then true
+            document.write("true");
+         }else{
+             document.write("false");
+         }
+         document.write("<br>");
+    </script>
+
+    <!--logical operators:- &&,||-->
+    <script>
+        // and  logical operator
+        var age = 19;
+        if(age>=18 && age<=100){                            
+        document.write("Eligible for voting");
+        }else{
+             document.write(" Not Eligible for voting");
+        }
+        document.write("<br>");
+        
+        // Or  logical operator
+        var day = "Monday";
+
+        if(day === "Saturday" || day === "Sunday"){
+              document.write("Its Weekend");
+        }else{
+            document.write("Its Weekdays");
+        }
+        document.write("<br>");
+    </script>
+
+    <!--Ternary operator-->
+    <script>
+        var age = 18;
+        var  eligiblity = (age>=18) ? "Eligible for vote" : " Not Eligible for vote"
+        document.write(eligiblity)
+    </script>
+
+</body>
+</html>
