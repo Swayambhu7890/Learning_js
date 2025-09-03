@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY_LOOPS</title>
+</head>
+<body>
+    <!--Mixed array(boolean,string,number with concatenation)-->
+    <script>
+        var mixArray = [100,"Swayambhu",true,45.89];
+       var mixArray2 = [101,"Rock",true,45.89];
+        document.write("<b>Full Array:</b>"+ mixArray + mixArray2 );
+    </script>
+
+
+    <!--for loop  (array)-->
+    <script>
+        var array = [10,20,30,40,50,60,70,80,90,100];
+
+        sumfor=0;
+        document.write("<h2>Using For Loop</h2><ul>");
+            for(var i=0; i<array.length; i++){                     //i<=4 and array.length is attribute
+
+
+                document.write("<li>" + array[i] + "</li>")
+                    sumfor +=array[i];                           //sumfor=sumfor + array[i]
+            }
+            document.write("</ul>")
+            document.write("Total sum using for loop =" + sumfor + "<hr>")
+
+    </script>
+
+    <!--while loop  (array)-->
+    <script>
+        var array = [10,20,30,40,50,60,70,80,90,100];
+
+        sumwhile=0;
+        var j=0;
+        document.write("<h2>Using While Loop</h2><ul>");
+            while( j<array.length){                     //i<=4 and array.length is attribute
+
+                document.write("<li>" + array[j] + "</li>")
+                    sumwhile +=array[j]; 
+                    j++;                          
+            }
+            document.write("</ul>")
+            document.write("Total sum using while loop =" + sumwhile + "<hr>")
+
+    </script>
+
+    <!-- do while loop (array) -->
+    <script>
+    var array = [10,20,30,40,50,60,70,80,90,100];
+
+    var sumDoWhile = 0;
+    var k = 0;
+
+    document.write("<h2>Using Do While Loop</h2><ul>");
+    do {
+        document.write("<li>" + array[k] + "</li>");
+        sumDoWhile += array[k];
+        k++;
+    } while (k < array.length);
+
+    document.write("</ul>");
+    document.write("Total sum using do while loop = " + sumDoWhile + "<hr>");
+    
+    </script>
+
+
+</body>
+</html>

@@ -22,12 +22,21 @@
          }
     </script>
 
-    <!--months using nested if else-->
-    <script>
-         var per = prompt("Enter the Number of Months");
-         per = parseInt(per);  
- 
-          
-    </script>
+    <!--months using nested if else using both uppercase and lowercase-->    
+<script>
+    var month = prompt("Enter month name (e.g., January, February, ...)");
+    month = month.toLowerCase();
+
+    if (month == "january" || month == "march" || month == "may" || month == "july" || month == "august" || month == "october" || month == "december") {
+        document.write(month + " has 31 days");
+    } else if (month == "april" || month == "june" || month == "september" || month == "november") {
+        document.write(month + " has 30 days");
+    } else if (month == "february") {
+        document.write("february has 28 or 29 days");
+    } else {
+        document.write("Invalid month");
+    }
+</script>
+
 </body>
 </html>
