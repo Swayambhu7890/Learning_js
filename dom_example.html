@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Example</title>
+</head>
+<body>
+    <h2 id = "heading">This is plain Html Output</h2>
+    <button onclick="ChangeText()">Click Me</button>
+
+    <p id="para">This is paragraph</p>
+     <button onclick="ChangeColor()">Click Me</button>
+
+    
+    <script>
+         //dom without style//
+        function ChangeText(){
+            document.getElementById("heading").innerHTML = "Welcome to dom in Javascript";
+        }
+
+          // dom by using style//
+         function ChangeColor(){
+            document.getElementById("para").style.color = "yellow";
+             document.getElementById("para").style.fontSize = "80px";
+            
+        }
+    </script>
+</body>
+</html>
